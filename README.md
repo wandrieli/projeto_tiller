@@ -1,8 +1,8 @@
-# 📊 Projeto: Integração com API de Dados abertos da Câmara dos Deputados
+# 📊 Projeto: Integração com API de Dados abertos da Câmara dos Deputados / IBGE
 
 Projeto Final Tiller — Pipeline Python para Dados via APIs
 
-Este projeto realiza a ingestão de dados abertos da **Câmara dos Deputados** diretamente no Databricks, com tratamento das informações e armazenamento em tabelas para análises posteriores.
+Este projeto realiza a ingestão de dados abertos da **Câmara dos Deputados**  e do **IBGE** diretamente no Databricks, com tratamento das informações e armazenamento em tabelas para análises posteriores.
 
 ---
 
@@ -15,9 +15,9 @@ https://dadosabertos.camara.leg.br/
 
 - Deputados: https://dadosabertos.camara.leg.br/api/v2/deputados
 - Proposições: https://dadosabertos.camara.leg.br/api/v2/proposicoes
-- Votações: https://dadosabertos.camara.leg.br/api/v2/votacoes
 - Eventos: https://dadosabertos.camara.leg.br/api/v2/eventos
 - Despesas: https://dadosabertos.camara.leg.br/swagger/api.html?tab=staticfile (Realizado Download do Documento)
+- Estados: https://servicodados.ibge.gov.br/api/v1/localidades/estados
 
 
 **Documentações:**
@@ -35,20 +35,16 @@ https://dadosabertos.camara.leg.br/swagger/api.html?tab=api
 **Bibliotecas necessárias:**
 
 
-- requests
-- pyspark
-- time
-- datetime
+Todas disponíveis no nb_parametros.
+
 
 🚀 Execução
 
 - Criar um Notebook no Databricks.
 - Copiar o código do projeto para o Notebook.
-- Executar o arquivo Bronze_cvm para ingestão e tratamento dos dados da CVM.
-- Executar o arquivo Bronze_brasil para enriquecimento dos dados com informações da BrasilAPI.
-- Consultar os dados no Databricks com:
-  SELECT * FROM cvm_bronze;
-  SELECT * FROM brasil_bronze;
+- Executar o arquivo Bronze_ para ingestão e tratamento dos dados da CVM.
+- Executar o arquivo silver para limpeza
+- Executar arquivos da camada gold.
 
 ## Modelo
 
