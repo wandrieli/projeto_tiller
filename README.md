@@ -48,6 +48,7 @@ Todas disponíveis no nb_parametros.
 
 ## Modelo
 
+<img width="1066" height="648" alt="Modelo Tiller" src="https://github.com/user-attachments/assets/0c36e5d8-cac3-4b53-a86a-25470cd1c03d" />
 
 
 
